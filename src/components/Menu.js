@@ -6,7 +6,7 @@ export default function Menu() {
   return (
     <>
     {pizzaData.map((pizza) => {
-      return <Pizza name={pizza.name} ingredients={pizza.ingredients} photoName={pizza.photoName}/>
+      return <Pizza name={pizza.name} ingredients={pizza.ingredients} photoName={pizza.photoName} key={pizza.name}/>
     })}
     </>
   )
