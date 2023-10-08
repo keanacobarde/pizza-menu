@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { pizzaData } from "./data";
 import Pizza from "./components/Pizza";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <h1>Hey, React!</h1> 
+     <Header />
     {pizzaData.map((pizza) => {
       return <Pizza name={pizza.name} ingredients={pizza.ingredients} photoName={pizza.photoName}/>
     })}
+    <Footer />
     </div>
   );
 }
